@@ -6,13 +6,14 @@
   <title>Randy Ramírez Ampie · Abogado Laboralista · Costa Rica</title>
   <meta name="description" content="Randy Ramírez Ampie, abogado incorporado al Colegio de Abogados y Abogadas de Costa Rica, con énfasis en Derecho Laboral. Asesoría jurídica clara, preventiva y estratégica para trabajadores y empleadores." />
   <meta name="author" content="Randy Ramírez Ampie" />
-  <meta name="keywords" content="abogado laboral, derecho laboral, Costa Rica, Liberia, Guanacaste, San José, asesoría legal, Reforma Procesal Laboral, abogado laboralista" />
+  <meta name="keywords" content="abogado laboral, derecho laboral, Costa Rica, Liberia, Guanacaste, San José, asesoría legal, Reforma Procesal Laboral, labor lawyer, employment law attorney" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Randy Ramírez Ampie · Abogado Laboralista" />
   <meta property="og:description" content="Asesoría jurídica clara, preventiva y estratégica con énfasis en Derecho Laboral." />
   <meta property="og:locale" content="es_CR" />
+  <meta property="og:locale:alternate" content="en_US" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,19 +30,25 @@
         <span class="brand__mark">RR</span>
         <span class="brand__text">
           <strong>Randy Ramírez Ampie</strong>
-          <em>Abogado · Derecho Laboral</em>
+          <em data-i18n="brand.role">Abogado · Derecho Laboral</em>
         </span>
       </a>
       <nav class="nav__links" aria-label="Navegación principal">
-        <a href="#perfil">Perfil</a>
-        <a href="#areas">Áreas</a>
-        <a href="#porque">Por qué elegirme</a>
-        <a href="#trayectoria">Trayectoria</a>
-        <a href="#contacto" class="nav__cta">Contacto</a>
+        <a href="#perfil" data-i18n="nav.profile">Perfil</a>
+        <a href="#areas" data-i18n="nav.areas">Áreas</a>
+        <a href="#porque" data-i18n="nav.why">Por qué elegirme</a>
+        <a href="#trayectoria" data-i18n="nav.background">Trayectoria</a>
+        <a href="#contacto" class="nav__cta" data-i18n="nav.contact">Contacto</a>
       </nav>
-      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav__right">
+        <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="es" class="is-active" aria-pressed="true">ES</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -49,22 +56,22 @@
   <section class="hero">
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="container hero__inner">
-      <p class="hero__eyebrow">Incorporado al Colegio de Abogados y Abogadas de Costa Rica · marzo 2025</p>
-      <h1 class="hero__title">Defensa y asesoría en <span>Derecho Laboral</span> con rigor, ética y resultados.</h1>
-      <p class="hero__lead">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Incorporado al Colegio de Abogados y Abogadas de Costa Rica · marzo 2025</p>
+      <h1 class="hero__title" data-i18n="hero.title">Defensa y asesoría en <span>Derecho Laboral</span> con rigor, ética y resultados.</h1>
+      <p class="hero__lead" data-i18n="hero.lead">
         Soy <strong>Randy Ramírez Ampie</strong>, abogado costarricense enfocado en ofrecer
         soluciones jurídicas <em>claras, preventivas y estratégicas</em>. Acompaño a trabajadores
         y empleadores en cada etapa del conflicto laboral, con un dominio práctico de los
         procesos del Ministerio de Trabajo y de la Reforma Procesal Laboral.
       </p>
       <div class="hero__actions">
-        <a href="#contacto" class="btn btn--gold">Solicitar una consulta</a>
-        <a href="#areas" class="btn btn--ghost">Conocer mis áreas</a>
+        <a href="#contacto" class="btn btn--gold" data-i18n="hero.cta1">Solicitar una consulta</a>
+        <a href="#areas" class="btn btn--ghost" data-i18n="hero.cta2">Conocer mis áreas</a>
       </div>
       <ul class="hero__stats">
-        <li><strong>98.75%</strong><span>Calificación como servidor público</span></li>
-        <li><strong>+8 años</strong><span>En materia administrativa laboral</span></li>
-        <li><strong>ES / EN</strong><span>Atención bilingüe</span></li>
+        <li><strong>98.75%</strong><span data-i18n="hero.stat1">Calificación como servidor público</span></li>
+        <li><strong data-i18n="hero.stat2num">+8 años</strong><span data-i18n="hero.stat2">En materia administrativa laboral</span></li>
+        <li><strong>ES / EN</strong><span data-i18n="hero.stat3">Atención bilingüe</span></li>
       </ul>
     </div>
   </section>
@@ -73,26 +80,26 @@
   <section class="section" id="perfil">
     <div class="container grid-2">
       <div class="section__head">
-        <span class="kicker">Perfil profesional</span>
-        <h2>Un abogado de referencia, comprometido con cada cliente.</h2>
+        <span class="kicker" data-i18n="profile.kicker">Perfil profesional</span>
+        <h2 data-i18n="profile.title">Un abogado de referencia, comprometido con cada cliente.</h2>
       </div>
       <div class="prose">
-        <p>
+        <p data-i18n="profile.p1">
           Mi vocación es consolidarme como un abogado de referencia en el ejercicio del Derecho,
           con una <strong>especial fortaleza en Derecho Laboral</strong> y plena capacidad para
           asesorar con eficacia en materia <strong>Civil</strong> y <strong>Administrativa</strong>.
         </p>
-        <p>
+        <p data-i18n="profile.p2">
           Creo en el derecho como una herramienta preventiva: antes que litigar, busco anticipar
           el conflicto, ordenar la relación laboral y proteger los intereses de quien confía en mí.
           Respaldo mi labor con manejo funcional del inglés, dominio avanzado de herramientas
           digitales y una formación jurídica y tecnológica en constante actualización.
         </p>
         <div class="badges">
-          <span>Asesoría clara y preventiva</span>
-          <span>Redacción jurídica precisa</span>
-          <span>Trámites administrativos</span>
-          <span>Vocación de servicio</span>
+          <span data-i18n="profile.badge1">Asesoría clara y preventiva</span>
+          <span data-i18n="profile.badge2">Redacción jurídica precisa</span>
+          <span data-i18n="profile.badge3">Trámites administrativos</span>
+          <span data-i18n="profile.badge4">Vocación de servicio</span>
         </div>
       </div>
     </div>
@@ -102,33 +109,33 @@
   <section class="section section--alt" id="areas">
     <div class="container">
       <div class="section__head section__head--center">
-        <span class="kicker">Áreas de práctica</span>
-        <h2>Acompañamiento jurídico integral, con el laboral como columna vertebral.</h2>
+        <span class="kicker" data-i18n="areas.kicker">Áreas de práctica</span>
+        <h2 data-i18n="areas.title">Acompañamiento jurídico integral, con el laboral como columna vertebral.</h2>
       </div>
       <div class="cards">
         <article class="card card--feature">
-          <div class="card__tag">Especialidad principal</div>
-          <h3>Derecho Laboral</h3>
-          <p>
+          <div class="card__tag" data-i18n="areas.featTag">Especialidad principal</div>
+          <h3 data-i18n="areas.feat.title">Derecho Laboral</h3>
+          <p data-i18n="areas.feat.p">
             El eje de mi ejercicio profesional. Asesoro y represento tanto a
             <strong>trabajadores</strong> como a <strong>empleadores</strong> bajo el marco de
             la Reforma Procesal Laboral.
           </p>
           <ul>
-            <li>Despidos, liquidaciones y derechos laborales</li>
-            <li>Denuncias, inspecciones y audiencias ante el MTSS</li>
-            <li>Contratos de trabajo y prevención de conflictos</li>
-            <li>Acoso laboral, jornadas y condiciones de empleo</li>
-            <li>Cálculo de prestaciones y extremos laborales</li>
+            <li data-i18n="areas.feat.li1">Despidos, liquidaciones y derechos laborales</li>
+            <li data-i18n="areas.feat.li2">Denuncias, inspecciones y audiencias ante el MTSS</li>
+            <li data-i18n="areas.feat.li3">Contratos de trabajo y prevención de conflictos</li>
+            <li data-i18n="areas.feat.li4">Acoso laboral, jornadas y condiciones de empleo</li>
+            <li data-i18n="areas.feat.li5">Cálculo de prestaciones y extremos laborales</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Derecho Civil</h3>
-          <p>Asesoría sólida en obligaciones, contratos y asuntos civiles cotidianos, con un enfoque preventivo y orientado a la solución.</p>
+          <h3 data-i18n="areas.civil.title">Derecho Civil</h3>
+          <p data-i18n="areas.civil.p">Asesoría sólida en obligaciones, contratos y asuntos civiles cotidianos, con un enfoque preventivo y orientado a la solución.</p>
         </article>
         <article class="card">
-          <h3>Derecho Administrativo</h3>
-          <p>Dominio operativo de los procesos administrativos del sector público, trámites, gestiones y defensa de derechos frente a la Administración.</p>
+          <h3 data-i18n="areas.admin.title">Derecho Administrativo</h3>
+          <p data-i18n="areas.admin.p">Dominio operativo de los procesos administrativos del sector público, trámites, gestiones y defensa de derechos frente a la Administración.</p>
         </article>
       </div>
     </div>
@@ -138,40 +145,40 @@
   <section class="section" id="porque">
     <div class="container">
       <div class="section__head section__head--center">
-        <span class="kicker">Por qué elegirme</span>
-        <h2>Experiencia real en el corazón del sistema laboral costarricense.</h2>
-        <p class="section__sub">No solo conozco la teoría: he trabajado, día a día, dentro de la institución que vela por los derechos laborales del país.</p>
+        <span class="kicker" data-i18n="why.kicker">Por qué elegirme</span>
+        <h2 data-i18n="why.title">Experiencia real en el corazón del sistema laboral costarricense.</h2>
+        <p class="section__sub" data-i18n="why.sub">No solo conozco la teoría: he trabajado, día a día, dentro de la institución que vela por los derechos laborales del país.</p>
       </div>
       <div class="features">
         <div class="feature">
           <div class="feature__icon">⚖️</div>
-          <h3>Vivencia institucional única</h3>
-          <p>Más de ocho años en el <strong>Ministerio de Trabajo y Seguridad Social</strong>, asesorando directamente a trabajadores y empleadores. Entiendo el procedimiento desde adentro.</p>
+          <h3 data-i18n="why.f1.title">Vivencia institucional única</h3>
+          <p data-i18n="why.f1.p">Más de ocho años en el <strong>Ministerio de Trabajo y Seguridad Social</strong>, asesorando directamente a trabajadores y empleadores. Entiendo el procedimiento desde adentro.</p>
         </div>
         <div class="feature">
           <div class="feature__icon">📈</div>
-          <h3>Excelencia comprobada</h3>
-          <p>Calificación destacada de <strong>98.75%</strong> como servidor público y reconocimiento por mi atención durante la implementación de la Reforma Procesal Laboral.</p>
+          <h3 data-i18n="why.f2.title">Excelencia comprobada</h3>
+          <p data-i18n="why.f2.p">Calificación destacada de <strong>98.75%</strong> como servidor público y reconocimiento por mi atención durante la implementación de la Reforma Procesal Laboral.</p>
         </div>
         <div class="feature">
           <div class="feature__icon">🌐</div>
-          <h3>Atención bilingüe</h3>
-          <p>Manejo funcional del <strong>inglés</strong> que me permite atender con claridad a usuarios extranjeros y empresas con personal internacional.</p>
+          <h3 data-i18n="why.f3.title">Atención bilingüe</h3>
+          <p data-i18n="why.f3.p">Manejo funcional del <strong>inglés</strong> que me permite atender con claridad a usuarios extranjeros y empresas con personal internacional.</p>
         </div>
         <div class="feature">
           <div class="feature__icon">🛡️</div>
-          <h3>Enfoque preventivo</h3>
-          <p>Priorizo anticipar el conflicto: ordeno la relación laboral, blindo a la empresa y protejo al trabajador antes de que el problema llegue a tribunales.</p>
+          <h3 data-i18n="why.f4.title">Enfoque preventivo</h3>
+          <p data-i18n="why.f4.p">Priorizo anticipar el conflicto: ordeno la relación laboral, blindo a la empresa y protejo al trabajador antes de que el problema llegue a tribunales.</p>
         </div>
         <div class="feature">
           <div class="feature__icon">📝</div>
-          <h3>Redacción jurídica precisa</h3>
-          <p>Documentos, escritos y trámites elaborados con rigor técnico y lenguaje claro, para que usted entienda siempre su situación.</p>
+          <h3 data-i18n="why.f5.title">Redacción jurídica precisa</h3>
+          <p data-i18n="why.f5.p">Documentos, escritos y trámites elaborados con rigor técnico y lenguaje claro, para que usted entienda siempre su situación.</p>
         </div>
         <div class="feature">
           <div class="feature__icon">🤝</div>
-          <h3>Trato cercano y humano</h3>
-          <p>Empatía y verdadera vocación de servicio. Cada caso recibe atención personal, honesta y comprometida.</p>
+          <h3 data-i18n="why.f6.title">Trato cercano y humano</h3>
+          <p data-i18n="why.f6.p">Empatía y verdadera vocación de servicio. Cada caso recibe atención personal, honesta y comprometida.</p>
         </div>
       </div>
     </div>
@@ -181,57 +188,57 @@
   <section class="section section--alt" id="trayectoria">
     <div class="container grid-2 grid-2--top">
       <div>
-        <span class="kicker">Trayectoria</span>
-        <h2>Experiencia profesional</h2>
+        <span class="kicker" data-i18n="exp.kicker">Trayectoria</span>
+        <h2 data-i18n="exp.title">Experiencia profesional</h2>
         <div class="timeline">
           <div class="t-item">
-            <div class="t-item__period">ago 2017 — presente</div>
-            <h3>Oficinista · Asesor laboral</h3>
-            <p class="t-item__org">Ministerio de Trabajo y Seguridad Social — Liberia</p>
+            <div class="t-item__period" data-i18n="exp.j1.period">ago 2017 — presente</div>
+            <h3 data-i18n="exp.j1.role">Oficinista · Asesor laboral</h3>
+            <p class="t-item__org" data-i18n="exp.j1.org">Ministerio de Trabajo y Seguridad Social — Liberia</p>
             <ul>
-              <li>Atención y asesoría directa a trabajadores y empleadores en temas laborales.</li>
-              <li>Apoyo en trámites de inspección, denuncias y audiencias.</li>
-              <li>Atención multicanal y a usuarios extranjeros.</li>
-              <li>Apoyo jurídico-operativo al equipo técnico.</li>
+              <li data-i18n="exp.j1.li1">Atención y asesoría directa a trabajadores y empleadores en temas laborales.</li>
+              <li data-i18n="exp.j1.li2">Apoyo en trámites de inspección, denuncias y audiencias.</li>
+              <li data-i18n="exp.j1.li3">Atención multicanal y a usuarios extranjeros.</li>
+              <li data-i18n="exp.j1.li4">Apoyo jurídico-operativo al equipo técnico.</li>
             </ul>
           </div>
           <div class="t-item">
-            <div class="t-item__period">2015 — 2017</div>
-            <h3>Supervisor de Recepción</h3>
-            <p class="t-item__org">Hotel Las Espuelas — Liberia</p>
+            <div class="t-item__period" data-i18n="exp.j2.period">2015 — 2017</div>
+            <h3 data-i18n="exp.j2.role">Supervisor de Recepción</h3>
+            <p class="t-item__org" data-i18n="exp.j2.org">Hotel Las Espuelas — Liberia</p>
             <ul>
-              <li>Supervisión de personal, reservas, auditorías y atención al cliente.</li>
-              <li>Coordinación operativa entre departamentos.</li>
-              <li>Hotel posicionado entre los 3 mejores de Liberia (TripAdvisor y Booking, 2016–2017).</li>
+              <li data-i18n="exp.j2.li1">Supervisión de personal, reservas, auditorías y atención al cliente.</li>
+              <li data-i18n="exp.j2.li2">Coordinación operativa entre departamentos.</li>
+              <li data-i18n="exp.j2.li3">Hotel posicionado entre los 3 mejores de Liberia (TripAdvisor y Booking, 2016–2017).</li>
             </ul>
           </div>
         </div>
       </div>
       <div>
-        <span class="kicker">Formación</span>
-        <h2>Estudios y credenciales</h2>
+        <span class="kicker" data-i18n="edu.kicker">Formación</span>
+        <h2 data-i18n="edu.title">Estudios y credenciales</h2>
         <div class="timeline">
           <div class="t-item">
-            <div class="t-item__period">jun 2025 — presente</div>
-            <h3>Programa de Actualización en Derecho Laboral</h3>
-            <p class="t-item__org">Colegio de Abogados y Abogadas de Costa Rica</p>
+            <div class="t-item__period" data-i18n="edu.e1.period">jun 2025 — presente</div>
+            <h3 data-i18n="edu.e1.title">Programa de Actualización en Derecho Laboral</h3>
+            <p class="t-item__org" data-i18n="edu.e1.org">Colegio de Abogados y Abogadas de Costa Rica</p>
           </div>
           <div class="t-item">
             <div class="t-item__period">2018 — 2023</div>
-            <h3>Licenciatura en Derecho</h3>
-            <p class="t-item__org">Universidad de San José</p>
+            <h3 data-i18n="edu.e2.title">Licenciatura en Derecho</h3>
+            <p class="t-item__org" data-i18n="edu.e2.org">Universidad de San José</p>
           </div>
           <div class="t-item">
             <div class="t-item__period">2014 — 2017</div>
-            <h3>Ejecutivo en Inglés para Servicios</h3>
-            <p class="t-item__org">INA — Liberia, Guanacaste</p>
+            <h3 data-i18n="edu.e3.title">Ejecutivo en Inglés para Servicios</h3>
+            <p class="t-item__org" data-i18n="edu.e3.org">INA — Liberia, Guanacaste</p>
           </div>
         </div>
         <div class="chips">
-          <span>Incorporado al Colegio de Abogados · 2025</span>
-          <span>Excel Avanzado</span>
-          <span>Introducción a la Ciberseguridad</span>
-          <span>Inglés</span>
+          <span data-i18n="edu.chip1">Incorporado al Colegio de Abogados · 2025</span>
+          <span data-i18n="edu.chip2">Excel Avanzado</span>
+          <span data-i18n="edu.chip3">Introducción a la Ciberseguridad</span>
+          <span data-i18n="edu.chip4">Inglés</span>
         </div>
       </div>
     </div>
@@ -241,9 +248,9 @@
   <section class="section section--contact" id="contacto">
     <div class="container">
       <div class="section__head section__head--center">
-        <span class="kicker kicker--light">Contacto</span>
-        <h2>Conversemos sobre su caso</h2>
-        <p class="section__sub section__sub--light">La primera conversación es el paso más importante. Escríbame y reciba una orientación clara y honesta sobre su situación laboral.</p>
+        <span class="kicker kicker--light" data-i18n="contact.kicker">Contacto</span>
+        <h2 data-i18n="contact.title">Conversemos sobre su caso</h2>
+        <p class="section__sub section__sub--light" data-i18n="contact.sub">La primera conversación es el paso más importante. Escríbame y reciba una orientación clara y honesta sobre su situación laboral.</p>
       </div>
       <div class="contact-grid">
         <a class="contact-card" href="https://wa.me/50686342200?text=Hola%20Randy%2C%20me%20gustar%C3%ADa%20una%20consulta%20legal" target="_blank" rel="noopener">
@@ -253,22 +260,22 @@
         </a>
         <a class="contact-card" href="tel:+50686342200">
           <span class="contact-card__icon">📞</span>
-          <strong>Teléfono</strong>
+          <strong data-i18n="contact.phone">Teléfono</strong>
           <span>8634-2200</span>
         </a>
         <a class="contact-card" href="mailto:randyra1310@gmail.com">
           <span class="contact-card__icon">✉️</span>
-          <strong>Correo</strong>
+          <strong data-i18n="contact.email">Correo</strong>
           <span>randyra1310@gmail.com</span>
         </a>
         <div class="contact-card contact-card--static">
           <span class="contact-card__icon">📍</span>
-          <strong>Ubicación</strong>
+          <strong data-i18n="contact.location">Ubicación</strong>
           <span>Liberia, Guanacaste · San José, Desamparados</span>
         </div>
       </div>
       <div class="contact-cta">
-        <a href="https://wa.me/50686342200?text=Hola%20Randy%2C%20me%20gustar%C3%ADa%20una%20consulta%20legal" target="_blank" rel="noopener" class="btn btn--gold btn--lg">Escribir por WhatsApp</a>
+        <a href="https://wa.me/50686342200?text=Hola%20Randy%2C%20me%20gustar%C3%ADa%20una%20consulta%20legal" target="_blank" rel="noopener" class="btn btn--gold btn--lg" data-i18n="contact.cta">Escribir por WhatsApp</a>
       </div>
     </div>
   </section>
@@ -280,14 +287,14 @@
         <span class="brand__mark">RR</span>
         <div>
           <strong>Randy Ramírez Ampie</strong>
-          <em>Abogado · Énfasis en Derecho Laboral</em>
+          <em data-i18n="footer.role">Abogado · Énfasis en Derecho Laboral</em>
         </div>
       </div>
-      <p class="footer__note">
+      <p class="footer__note" data-i18n="footer.note">
         Incorporado al Colegio de Abogados y Abogadas de Costa Rica.<br />
         Liberia, Guanacaste · San José, Desamparados.
       </p>
-      <p class="footer__copy">© <span id="year"></span> Randy Ramírez Ampie. Todos los derechos reservados.</p>
+      <p class="footer__copy">© <span id="year"></span> Randy Ramírez Ampie. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
     </div>
   </footer>
 
